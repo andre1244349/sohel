@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - E-commerce Website</title>
+    <style>
+        /* General Body Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 30px;
+            background-color: #2ecc71;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin: 0 20px;
+        }
+
+        .navbar a:hover {
+            color: #1e8449;
+        }
+
+        /* Page Title */
+        .page-title {
+            text-align: center;
+            padding: 50px 20px;
+            background-color: #2ecc71;
+            color: white;
+        }
+
+        .page-title h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        /* Product Grid */
+        .products {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+            padding: 50px 20px;
+            justify-items: center;
+        }
+
+        /* Individual Product */
+        .product {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+            text-align: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .product:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.1);
+        }
+
+        .product img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+
+        .product h3 {
+            font-size: 24px;
+            font-weight: 500;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        .product p {
+            font-size: 18px;
+            color: #555;
+            margin-bottom: 15px;
+        }
+
+        .product button {
+            background-color: #2ecc71;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            border-radius: 25px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .product button:hover {
+            background-color: #27ae60;
+            transform: translateY(-3px);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            padding: 30px 20px;
+            background-color: #2ecc71;
+            color: white;
+            font-size: 16px;
+            border-top: 4px solid #1e8449;
+        }
+
+        /* Media Queries for Responsiveness */
+        @media (max-width: 768px) {
+            .page-title h1 {
+                font-size: 30px;
+            }
+
+            .product h3 {
+                font-size: 20px;
+            }
+
+            .product p {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <div class="navbar">
+        <a href="index.html">Home</a> <!-- Link to Home Page -->
+        <a href="shop.html">Shop</a> <!-- Shop Page Link -->
+        <a href="contact.html">Contact</a> <!-- Link to Contact Page -->
+    </div>
+
+    <!-- Page Title -->
+    <div class="page-title">
+        <h1>Explore Our Products</h1>
+        <p>Find the best deals on clothes and accessories</p>
+    </div>
+
+    <!-- Products Section -->
+    <div class="products">
+        <!-- Product 1 - T-Shirt -->
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Jeans">
+            <h3>Classic Blue Jeans</h3>
+            <p>$49.99</p>
+            <a href="https://wa.me/1234567890?text=I%20want%20to%20buy%20Classic%20Blue%20Jeans%20for%20$49.99" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <!-- Product 2 - T-Shirt -->
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="T-shirt">
+            <h3>Casual T-Shirt</h3>
+            <p>$19.99</p>
+            <a href="https://wa.me/1234567890?text=I%20want%20to%20buy%20Casual%20T-shirt%20for%20$19.99" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <!-- Product 3 - Jacket -->
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Jacket">
+            <h3>Leather Jacket</h3>
+            <p>$129.99</p>
+            <a href="https://wa.me/1234567890?text=I%20want%20to%20buy%20Leather%20Jacket%20for%20$129.99" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <!-- Product 4 - Sweater -->
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Sweater">
+            <h3>Woolen Sweater</h3>
+            <p>$59.99</p>
+            <a href="https://wa.me/1234567890?text=I%20want%20to%20buy%20Woolen%20Sweater%20for%20$59.99" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <!-- Product 5 - Shorts -->
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Shorts">
+            <h3>Summer Shorts</h3>
+            <p>$29.99</p>
+            <a href="https://wa.me/1234567890?text=I%20want%20to%20buy%20Summer%20Shorts%20for%20$29.99" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <!-- Product 6 - Formal Shirt -->
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Shirt">
+            <h3>Formal Shirt</h3>
+            <p>$39.99</p>
+            <a href="https://wa.me/1234567890?text=I%20want%20to%20buy%20Formal%20Shirt%20for%20$39.99" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <!-- Add 24 more products with unique names, images, and prices as needed -->
+        <!-- Example: Product 7, Product 8, etc. -->
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Hoodie">
+            <h3>Stylish Hoodie</h3>
+            <p>$69.99</p>
+            <a href="https://wa.me/1234567890?text=I%20want%20to%20buy%20Stylish%20Hoodie%20for%20$69.99" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/300" alt="Sneakers">
+            <h3>Running Sneakers</h3>
+            <p>$89.99</p>
+            <a href="https://wa.me/1234567890?text=I%20want%20to%20buy%20Running%20Sneakers%20for%20$89.99" target="_blank">
+                <button>Buy Now</button>
+            </a>
+        </div>
+
+        <!-- Add similar products with different categories, images, and prices -->
+        <!-- Continue up to product 30 -->
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2025 E-commerce Website. All rights reserved.</p>
+    </div>
+
+</body>
+</html>
